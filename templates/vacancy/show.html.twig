@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Vacancy{% endblock %}
+
+{% block body %}
+    <h1>Vacancy</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ vacancy.id }}</td>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td>{{ vacancy.name }}</td>
+            </tr>
+            <tr>
+                <th>Annotation</th>
+                <td>{{ vacancy.annotation }}</td>
+            </tr>
+            <tr>
+                <th>Link</th>
+                <td>{{ vacancy.link }}</td>
+            </tr>
+            <tr>
+                <th>Tags</th>
+                <td>{{ vacancy.tags }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ vacancy.description }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ vacancy.email }}</td>
+            </tr>
+            <tr>
+                <th>Img</th>
+                <td>{{ vacancy.img }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('vacancy_index') }}">back to list</a>
+
+    <a href="{{ path('vacancy_edit', {'id': vacancy.id}) }}">edit</a>
+
+    {{ include('vacancy/_delete_form.html.twig') }}
+{% endblock %}

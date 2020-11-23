@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no, viewport-fit=cover">
+    <meta name="keywords" content="">
+    <meta name="description" content="Temporal Games — Game Development, AI Research & Deployment">
+    <meta name="title" content="Temporal Games">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/images/favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/images/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/images/favicon/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('assets/images/favicon/site.webmanifes') }}t">
+    <link rel="mask-icon" href="{{ asset('assets/images/favicon/safari-pinned-tab.svg') }}" color="#5bbad5">
+    <link rel="shortcut icon" href="{{ asset('assets/images/favicon/favicon.ico') }}">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="{{ asset('assets/css/reset.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/swiper-bundle.min.css') }}">
+</head>
+<body>
+{% block body %}{% endblock %}
+{% block javascripts %}
+    <script src="{{ asset('assets/js/swiper-bundle.min.js') }}"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            themeColor: '#fff'
+        })
+        var mySwiper = new Swiper('.swiper-container-2', {
+            direction: 'horizontal',
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            themeColor: '#fff'
+        })
+    </script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
+{% endblock %}
+</body>
+</html>
