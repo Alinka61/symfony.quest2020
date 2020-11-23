@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bfe5ae86-c6e9-4a2a-b08a-95aefc6b6efe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/help_tmp/database_full_query.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+    <list default="true" id="bfe5ae86-c6e9-4a2a-b08a-95aefc6b6efe" name="Default Changelist" comment="auth1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201122233729.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20201122233729.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/info/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/info/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user_main/base_user.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_main/base_user.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user_main/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_main/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,12 +159,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606046668920</updated>
-      <workItem from="1606046670077" duration="19559000" />
+      <workItem from="1606046670077" duration="21603000" />
     </task>
+    <task id="LOCAL-00001" summary="auth1">
+      <created>1606128732445</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606128732445</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="auth1" />
+    <option name="LAST_COMMIT_MESSAGE" value="auth1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1144" y="151" key="#Inspections" timestamp="1606094744779">
@@ -186,10 +195,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606095525500" />
-    <state x="1019" y="278" key="FileChooserDialogImpl" timestamp="1606118898902">
+    <state x="1019" y="278" key="FileChooserDialogImpl" timestamp="1606137822227">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1019" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606118898902" />
+    <state x="1019" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606137822227" />
     <state x="728" y="387" key="Github.CreatePullRequestDialog" timestamp="1606124845472">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -210,5 +219,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="805" y="239" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606118385275" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606128737724">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606128737724" />
   </component>
 </project>
