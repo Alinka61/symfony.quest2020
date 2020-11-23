@@ -9,12 +9,12 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <h1>Добрый день Администратор ! ✅</h1>
 
-    This friendly message is coming from:
+    Данный раздел предназначен для редактирования содержимого сайта:
     <ul>
-        <li>Your controller at <code><a href="{{ 'W:/domains/symfony.quest2/src/Controller/InfoController.php'|file_link(0) }}">src/Controller/InfoController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'W:/domains/symfony.quest2/templates/info/index.html.twig'|file_link(0) }}">templates/info/index.html.twig</a></code></li>
+        <li>Вакансии: <code><a href="{{ asset('/vacancy/') }}">добавление, удаление, редактирование вакансий и внутренних страниц.</a></code></li>
+        <li>Продукты: <code><a href="{{ asset('/product/') }}">добавление, удаление, редактирование продуктов</a></code></li>
     </ul>
 </div>
 {% endblock %}
