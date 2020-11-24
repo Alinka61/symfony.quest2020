@@ -52,9 +52,9 @@
                     </div>
                 </div>
             {% else %}
-                <tr>
-                    <td colspan="6">no records found</td>
-                </tr>
+                <div>
+                    <div>no records found</div>
+                </div>
             {% endfor %}
         </div>
     </div>
@@ -64,54 +64,33 @@
             <p class="heading">Join us</p>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="job_list_item swiper-slide">
-                        <h3>C++ Core Engineer</h3>
-                        <p>Experienced C++ engineer for development of core artificial intelligence technology framework and integration modules.</p>
-                        <p><a href="core_engineer.html">View more <span class="arrow">&rarr;</span></a></p>
-                    </div>
-                    <div class="job_list_item swiper-slide">
-                        <h3>VFX Artist</h3>
-                        <p>Specialist capable of designing and implementing highly stylized visual effects, improving tools and optimizing pipelines.</p>
-                        <p><a href="vfx_artist.html">View more <span class="arrow">&rarr;</span></a></p>
-                    </div>
-                    <div class="job_list_item swiper-slide">
-                        <h3>UI Designer</h3>
-                        <p>Experienced UI/UX designer with a portfolio of game projects, capable of conceptualizing and implementing UI for Riflecore.</p>
-                        <p><a href="ui_designer.html">View more <span class="arrow">&rarr;</span></a></p>
-                    </div>
-                    <div class="job_list_item swiper-slide">
-                        <h3>Data Scientist</h3>
-                        <p>Experienced data scientist interested in developing new advanced technologies related to simulating convincing human-like behavior in learning, motion, speech and decision making.</p>
-                        <p><a href="data_scientist.html">View more <span class="arrow">&rarr;</span></a></p>
-                    </div>
-                    <div class="job_list_item swiper-slide">
-                        <h3>Other</h3>
-                        <p>If you don’t see your position listed but you think we can work together, feel free to contact us at <a href="mailto:job@temporal.games">job@temporal.games</a>, include your targeted position in the letter subject.</p>
-                    </div>
+                    {% for vacancy in vacancies %}
+                        <div class="job_list_item swiper-slide">
+                            <h3>{{ vacancy.name }}</h3>
+                            <p>{{ vacancy.annotation }}</p>
+                            <p><a href="{{ vacancy.link }}">View more <span class="arrow">&rarr;</span></a></p>
+                        </div>
+                    {% else %}
+                        <div class="job_list_item swiper-slide">
+                            <div>no records found</div>
+                        </div>
+                    {% endfor %}
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
             <div class="job_list">
-                <div class="job_list_item">
-                    <h3>C++ Core Engineer</h3>
-                    <p>Experienced C++ engineer for development of core artificial intelligence technology framework and integration modules.</p>
-                    <p><a href="core_engineer.html">View more <span class="arrow">&rarr;</span></a></p>
-                </div>
-                <div class="job_list_item">
-                    <h3>VFX Artist</h3>
-                    <p>Specialist capable of designing and implementing highly stylized visual effects, improving tools and optimizing pipelines.</p>
-                    <p><a href="vfx_artist.html">View more <span class="arrow">&rarr;</span></a></p>
-                </div>
-                <div class="job_list_item">
-                    <h3>UI Designer</h3>
-                    <p>Experienced UI/UX designer with a portfolio of game projects, capable of conceptualizing and implementing UI for Riflecore.</p>
-                    <p><a href="ui_designer.html">View more <span class="arrow">&rarr;</span></a></p>
-                </div>
-                <div class="job_list_item">
-                    <h3>Data Scientist</h3>
-                    <p>Experienced data scientist interested in developing new advanced technologies related to simulating convincing human-like behavior in learning, motion, speech and decision making.</p>
-                    <p><a href="data_scientist.html">View more <span class="arrow">&rarr;</span></a></p>
-                </div>
+                {% for vacancy in vacancies %}
+                    <div class="job_list_item">
+                        <h3>{{ vacancy.name }}</h3>
+                        <p>{{ vacancy.annotation }}</p>
+                        <p><a href="{{ vacancy.link }}">View more <span class="arrow">&rarr;</span></a></p>
+                    </div>
+                {% else %}
+                    <div class="job_list_item">
+                        <div>no records found</div>
+                    </div>
+                {% endfor %}
+
                 <div class="job_list_item">
                     <h3>Other</h3>
                     <p>If you don’t see your position listed but you think we can work together, feel free to contact us at <a href="mailto:job@temporal.games" class="mailto">job@temporal.games</a>, include your targeted position in the letter subject.</p>

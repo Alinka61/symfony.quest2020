@@ -29,14 +29,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfe5ae86-c6e9-4a2a-b08a-95aefc6b6efe" name="Default Changelist" comment="auth1_0">
+    <list default="true" id="bfe5ae86-c6e9-4a2a-b08a-95aefc6b6efe" name="Default Changelist" comment="main_user_update1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/InfoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/InfoController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/UserMainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserMainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/VacancyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/VacancyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/Vacancy1Type.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/VacancyType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/VacancyType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/info/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/info/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/user_main/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_main/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -198,7 +193,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606046668920</updated>
       <workItem from="1606046670077" duration="27566000" />
-      <workItem from="1606178027132" duration="5388000" />
+      <workItem from="1606178027132" duration="6831000" />
     </task>
     <task id="LOCAL-00001" summary="auth1">
       <created>1606128732445</created>
@@ -214,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606138491513</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="main_user_update1">
+      <created>1606218197228</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606218197228</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +236,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="auth1" />
     <MESSAGE value="auth1_0" />
-    <option name="LAST_COMMIT_MESSAGE" value="auth1_0" />
+    <MESSAGE value="main_user_update1" />
+    <option name="LAST_COMMIT_MESSAGE" value="main_user_update1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Deployment" timestamp="1606154675616">
@@ -293,10 +296,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="805" y="239" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606118385275" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606138492457">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606218198891">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606138492457" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606218198891" />
     <state x="816" y="419" key="WebDeployment.AddServerDialog.v.1" timestamp="1606154138619">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
