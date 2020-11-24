@@ -3,7 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Vacancy;
-use App\Form\Vacancy1Type;
+use App\Form\VacancyType;
 use App\Repository\VacancyRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -31,7 +31,7 @@ class VacancyController extends AbstractController
     public function new(Request $request): Response
     {
         $vacancy = new Vacancy();
-        $form = $this->createForm(Vacancy1Type::class, $vacancy);
+        $form = $this->createForm(VacancyType::class, $vacancy);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -63,7 +63,7 @@ class VacancyController extends AbstractController
      */
     public function edit(Request $request, Vacancy $vacancy): Response
     {
-        $form = $this->createForm(Vacancy1Type::class, $vacancy);
+        $form = $this->createForm(VacancyType::class, $vacancy);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {

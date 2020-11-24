@@ -10,11 +10,31 @@
 
 <div class="example-wrapper">
     <h1>Добрый день Администратор ! ✅</h1>
-
+<?
+print_r($product);
+?>
     Данный раздел предназначен для редактирования содержимого сайта:
     <ul>
         <li>Вакансии: <code><a href="{{ asset('/vacancy/') }}">добавление, удаление, редактирование вакансий и внутренних страниц.</a></code></li>
         <li>Продукты: <code><a href="{{ asset('/product/') }}">добавление, удаление, редактирование продуктов</a></code></li>
     </ul>
 </div>
+    {% for product in products %}
+        <tr>
+            <td>{{ product.id }}</td>
+            <td>{{ product.name }}</td>
+            <td>{{ product.tags }}</td>
+            <td>{{ product.description }}</td>
+            <td>{{ product.link }}</td>
+            <td>
+                <a href="{{ path('product_show', {'id': product.id}) }}">show</a>
+                <a href="{{ path('product_edit', {'id': product.id}) }}">edit</a>
+            </td>
+        </tr>
+    {% else %}
+        <tr>
+            <td colspan="6">no records found</td>
+        </tr>
+    {% endfor %}
+
 {% endblock %}

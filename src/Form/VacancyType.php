@@ -16,6 +16,7 @@ class VacancyType extends AbstractType
             ->add('annotation')
             ->add('link')
             ->add('tags')
+            ->add('description')
             ->add('email')
             ->add('img')
         ;
